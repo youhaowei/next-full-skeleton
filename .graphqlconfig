@@ -1,0 +1,10 @@
+{
+	"schemaPath": "schemas/schema.graphql",
+	"includes": ["*.graphql"],
+	"excludes": ["temp/**"],
+	"extensions": {
+		"endpoints": {
+			"default": "http://localhost:3000/graph"
+		}
+	}
+}

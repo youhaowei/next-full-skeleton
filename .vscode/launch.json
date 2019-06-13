@@ -1,0 +1,37 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch via NPM",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["run", "dev"]
+		},
+		{
+			"type": "node",
+			"request": "attach",
+			"name": "Attach",
+			"port": 9229,
+			"restart": true,
+			"sourceMaps": true
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Nodemon",
+			"internalConsoleOptions": "neverOpen",
+			"program": "${workspaceRoot}/server/index.js",
+			"runtimeArgs": ["--delay", "2.5", "--inspect=5858"],
+			"port": 5858,
+			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/nodemon",
+			"restart": true,
+			"protocol": "inspector",
+			"stopOnEntry": false,
+			"sourceMaps": true
+		}
+	]
+}
