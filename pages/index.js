@@ -20,10 +20,9 @@ class HomePage extends React.Component {
 
 	render() {
 		return (
-			<>
-				<Head />
+			<MainLayout>
 				<h1>Welcome to Next.js!</h1>
-			</>
+			</MainLayout>
 		);
 	}
 }

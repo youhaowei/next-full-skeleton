@@ -79,10 +79,6 @@ nextApp.prepare().then(() => {
 	app.use(express.static(path.join(__dirname, "public")));
 	app.use("/auth", authRouter);
 	app.use(query());
-	app.use("*", (req, res, next) => {
-		console.log(req.baseUrl, req);
-		next();
-	});
 	apolloServer.applyMiddleware({
 		app,
 		path: config.path.graph,

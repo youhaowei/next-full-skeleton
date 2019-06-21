@@ -1,6 +1,12 @@
 {
 	"verbose": true,
-	"ignore": ["node_modules", ".next"],
-	"watch": ["server/**/*", "schemas/**/*"],
+	"ignore": [".next"],
+	"watch": [
+		"server/**/*",
+		"schemas/**/*",
+		"semantic-ui/**/*",
+		"next.config.js",
+		"node_modules/**/*"
+	],
 	"ext": "js json graphql"
 }
