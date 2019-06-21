@@ -21,7 +21,6 @@
 		"debug": "~2.6.9",
 		"express": "^4.16.4",
 		"express-session": "^1.16.1",
-		"extract-text-webpack-plugin": "^3.0.2",
 		"file-loader": "^4.0.0",
 		"fomantic-ui-less": "^2.7.6",
 		"graphql": "^14.3.1",
@@ -41,7 +40,6 @@
 		"react": "^16.8.6",
 		"react-apollo": "^2.5.5",
 		"react-dom": "^16.8.6",
-		"semantic-ui-less": "^2.4.1",
 		"style-loader": "^0.23.1",
 		"url-loader": "^2.0.0"
 	},
