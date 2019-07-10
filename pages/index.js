@@ -1,8 +1,6 @@
 import React from "react";
-import Router from "next/router";
 
-import MainLayout from "../components/layouts/main";
-import Head from "../components/head";
+import MinLayout from "../components/layouts/minimal";
 import checkLoggedIn from "../lib/checkLoggedIn";
 import redirect from "../lib/redirect";
 
@@ -20,9 +18,9 @@ class HomePage extends React.Component {
 
 	render() {
 		return (
-			<MainLayout>
+			<MinLayout>
 				<h1>Welcome to Next.js!</h1>
-			</MainLayout>
+			</MinLayout>
 		);
 	}
 }

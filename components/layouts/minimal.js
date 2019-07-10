@@ -1,7 +1,8 @@
 import Head from "../head";
 import "fomantic-ui-less/semantic.less";
 
-const MainLayout = ({ children }) => {
+// eslint-disable-next-line react/prop-types
+const MinimalLayout = ({ children }) => {
 	return (
 		<>
 			<Head />
@@ -10,4 +11,4 @@ const MainLayout = ({ children }) => {
 	);
 };
 
-export default MainLayout;
+export default MinimalLayout;

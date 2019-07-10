@@ -1,21 +1,31 @@
 import React from "react";
-import MainLayout from "../components/layouts/main";
+import MinLayout from "../components/layouts/minimal";
 import { Segment, Image, Button, Icon } from "semantic-ui-react";
 import Link from "next/link";
 
 export default class LoginPage extends React.Component {
 	render() {
 		return (
-			<MainLayout>
+			<MinLayout>
+				<div style={{
+					position: "fixed",
+					top: 0,
+					left: 0,
+					width: "100vw",
+					height: "100vh",
+					backgroundImage: "url(\"https://source.unsplash.com/daily?nature\")",
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+					filter: "blur(8px)",
+					zIndex: -1
+				}}>
+				</div>
 				<div style={{
 					display: "flex",
 					justifyContent: "center",
 					alignItems: "center",
 					width: "100vw",
 					height: "100vh",
-					backgroundImage: "url(\"https://source.unsplash.com/daily?nature\")",
-					backgroundSize: "cover",
-					backgroundPosition: "center"
 				}}>
 					<Segment style={{
 						margin: "auto",
@@ -24,7 +34,8 @@ export default class LoginPage extends React.Component {
 						textAlign: "center",
 						display: "flex",
 						flexDirection: "column",
-						alignItems: "center"
+						alignItems: "center",
+						zIndex: 1
 					}}>
 						<Image src="/static/images/New-ODM-logo.png" size="small" />
 						<Link href="/auth/google">
@@ -34,7 +45,7 @@ export default class LoginPage extends React.Component {
 						</Link>
 					</Segment>
 				</div>
-			</MainLayout>
+			</MinLayout>
 		);
 	}
 }
